@@ -1,0 +1,215 @@
+.community {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    background-color: #2355da;
+    padding: 50px 25px 40px;
+
+    &__communication {
+        background-color: #f9fafd;
+        width: 57.5%;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        margin: 0;
+        padding: 40px 0 0 0;
+
+        &--pad {
+            padding: 60px 0 0 70px;
+            // text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+    }
+
+    &__subtitle {
+        margin: 0;
+        padding: 0 0 50px 0;
+    }
+
+    &__address {
+        margin: 0 auto;
+        width: 42.5%;
+        color: #fff;
+        text-align: center;
+        // padding: 100px;
+    }
+
+    &__headquarters {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        padding: 0 20px 40px 90px;
+    }
+
+    &__wrapp {
+        display: inline-block;
+        max-width: 90px;
+        max-height: 90px;
+        margin: 20px 0 0 0;
+
+        &--sm {
+            max-width: 90px;
+            max-height: 70px;
+        }
+    }
+
+    &__info {
+        
+        text-align: left;
+        padding: 0 50px;
+    }
+
+    &__center {}
+
+    &__text {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        // display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 0 0 0;
+    }
+
+    &__icon {
+        color: #fff;
+        padding: 0 5px 0 0;
+    }
+
+    &__btns {
+        margin: 50px 0 0 0;
+    }
+
+    &__btn {
+        color: #fff;
+        border-color: #fff;
+        border-radius: 40px;
+        padding: 4%;
+        margin: 5px;
+        font-size: 16px;
+        font-weight: normal;
+        @include hover {
+            background-color: #2355da;
+        }
+    }
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__input {
+        width: 48%;
+        padding: 20px;
+        margin: 10px 0 10px 0;
+        border: 1px solid #eaeaea;
+    }
+
+    &__message {
+        border: 1px solid #eaeaea;
+        width: 100%;
+        padding: 25px 20px 10px 20px;
+        margin: 0 0 20px 0;
+
+        &--budget {
+            padding: 20px;
+            resize: none;
+        }
+    }
+
+    &__btn {
+        margin: 0 auto 75px;
+        padding: 15px 50px;
+        background-color: #fff;
+        border: 1px solid #2355da;
+        border-radius: 30px;
+        color: #2355da;
+        font-size: 16px;
+        // margin: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .community {
+        flex-direction: column;
+        padding: 50px 0 ;
+
+        &__communication {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 2rem;
+            padding: 55px 0 0 0;
+        }
+
+        &__subtitle {
+            font-size: 1.27rem;
+        }
+
+        &__wrapp {
+            margin: 15px auto 25px;
+            max-width: 114px;
+            max-height: 113px;
+            width: 30%;
+
+            &--sm {
+                margin: 15px auto 25px;
+                max-width: 153px;
+                max-height: 115px;
+                
+            }
+        }
+
+        &__address {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        &__headquarters {
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 0 40px;
+        }
+
+        &__center {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        &__link {
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 5px 0 0 0;
+        }
+
+        &__text {   
+            text-align: center;
+            font-size: 1.27rem;
+            margin: 0 auto;
+
+            &--edit {
+                width: 250px;
+            }
+        }
+
+        &__info {
+            padding: 0;
+        }
+    }
+}

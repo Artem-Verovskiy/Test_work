@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'communication';
+@import 'menu';
+@import 'services';
+@import 'list';
+@import 'portfolio';
+@import 'process';
+@import 'ourkey';
+@import 'industries';
+@import 'community';
+@import 'socials';
+@import 'footer';
+@import 'slogan';
+@import 'proposal';
+@import 'customers';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100%;
+    @include font(1.4rem, $text-color, 400, $text-ff, 1.8);
+    
+}
+
+
+a, button {
+    transition:  all 0.4s ease-in;
+}
+
+
+
+
+
+
+
+
+.love {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f9fafd;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        color: #000;
+        margin: 0 0 -20px 0;
+        padding: 40px 0 0 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        color: #000;
+        font-weight: 300;
+        // line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__text {
+        margin: -10px 0 70px 0;
+        padding: 0;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    &__btn {
+        display: block;
+        width: 180px;
+        background-color: #3425f4;
+        color: #fff;
+        margin: 0 auto 50px;
+        padding: 10px 50px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        text-decoration: none;
+        border: 1px solid #3425f4;
+        border-radius: 30px;
+        @include hover {
+            background-color: #fff;
+            color: #3425f4;
+        }
+    }
+}
+
+.mainpage {
+    color: #0274be;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.clients {
+    text-align: center;
+    padding: 0 20px 50px;
+    background-color: #0274be;
+
+    &__say {
+        font-family: "Poppins", sans-serif;
+        font-size: 4.2rem;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 40px 0 0 0;
+        margin: 0 0 5px;
+    }
+
+    // &__wrapper {
+        
+    // }
+
+    &__photo {
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        color: #808080;
+        font-style: italic;
+    }
+
+    &__name {
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: 13px;
+        color: #777777;
+
+    }
+}
+
+.rank {
+    padding: 30px 0 25px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-size: 4.2rem;
+        padding: 40px 30px 0;
+        margin: 0 0 20px;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 25px 50px;
+        margin: 0;
+    }
+
+    // &__logo {}
+}
+
+@media screen and (max-width:768px) {
+    .rank {
+
+        &__title {
+            font-size: 2.8rem;
+        }
+
+        &__logos {
+            display: block;
+            flex-direction: column;
+        }
+
+        &__logo {
+            // width: 100%;
+            display: block;
+            text-align: center;
+            align-items: center; 
+            margin: 0 auto;
+        }
+        
+    }
+    
+}
+
+
+
+.blue {
+    color: #0274be;
+}
+
+.white {
+    height: 40px;
+}
+
+
+

@@ -1,0 +1,25 @@
+.top {
+    height: 42px;
+    margin: 0;
+    padding: 8px 25px;
+    background-color: #f9fafd;
+}
+
+
+.communication {
+    float: right;
+    text-decoration: none;
+    padding: 0 8px;
+    color: black;
+
+    &__icon {
+        vertical-align: middle;
+    }
+}
+
+// .communication:before {
+//     content: '';
+//     height: 40px;
+//     border-left: 1px dashed #333;
+//     margin: 0 10px 0 0;
+// }

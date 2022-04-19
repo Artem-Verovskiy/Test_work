@@ -1,0 +1,179 @@
+.industries {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 35px;
+
+    &--edit {
+        background-color: #f9fafd;
+        padding: 20px 0;
+    }
+
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-size: 4.2rem;
+        font-weight: 700;
+        margin: 50px 0 0 0;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+    }
+
+    &__boxtitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;   
+        margin: 0 0 15px 0; 
+
+        &--center {
+            // font-family: $text-ff;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+
+        &--edit {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        &--center {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px 50px;
+        }
+    }
+
+    &__item{
+        width: calc(100% / 5 - 10px);
+        padding: 20px;
+        background-color: #f9fafd;
+        margin: 15px 5px;
+        vertical-align: baseline;
+        &:hover {
+            background-color: #c4c6cd;
+        }
+
+        &--edit {
+            &:hover {
+                background-color: #f9fafd;
+            }
+        }
+
+        &--center {
+            width: calc(100% / 3 - 10px);
+        }
+    }
+
+    &__icon {
+        max-width: 93px;
+        margin: 0 0 5px 0;
+    }
+
+    &__text {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1.4;
+        padding: 0;
+        margin: 0 0 20px 0;
+
+        &--edit {
+            font-weight: normal;
+            color: #7a7a7a;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        &__center {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__wrapp {
+        max-width: 75px;
+        margin: 0;
+        padding: 0; 
+    }
+
+    &__photo {
+        max-width: 300px;
+        width: 110%;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .industries {
+        
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__boxtitle {
+            font-size: 18.24px;
+        }
+    
+
+        &__items {
+            flex-direction: column;
+            // text-align: center;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        &__item {
+            display: block;
+            width: 100%;
+        }
+
+        &__icon {
+            max-width: 120px;
+            max-height: 120px;
+        }
+
+        &__wrapp {
+            max-width: 140px;
+            max-height: 140px;
+
+            &--lg {
+                max-width: 174px;
+                max-height: 116px;
+            }
+        }
+
+        &__photo {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-size: 1.27rem;
+        }
+
+        &__text {
+            font-size: 21px;
+
+            &--edit {
+                font-size: 12.78px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:577px) {
+    .list-key {
+
+        &__wrap {
+            width: 15.8%;
+        }
+    }
+}

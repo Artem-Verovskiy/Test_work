@@ -1,0 +1,162 @@
+.backfon {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    align-items: center;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 10, 0.8);
+    
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__modal {
+        width: 500px;
+        height: 285px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__icon {
+        position: absolute;
+        top: 6%;
+        right: 3%;
+        font-size: 26px;
+        color: rgba(255, 255, 255, 0.719);
+        @include hover {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.backfon__checkbox:checked+.backfon {
+    z-index: 10;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+// .backfon__checkbox{
+//     display: none;
+// }
+
+// .backfon__modal {
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+
+.portfolio {
+    margin: 0 auto;
+    padding: 0 0 100px;
+
+    &__title {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 4.2rem;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    &__inners {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    &__inner {
+        max-width: 50%;
+        width: calc(100% / 2 - 2px);
+        padding: 2px;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    &__wrap {
+        width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 10px 10px 20px;
+        background-color: rgba(253, 252, 251, .7);
+        width: 100%;
+        font-size: 1.3rem;
+        transform: translate(0, 100%);
+    }
+
+    &__btn {
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #0274be;
+        border-radius: 20px;
+        width: 320px;
+        padding: 5px 40px 5px 50px;
+        color: #fff;
+        background-color: #0274be;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+    }
+
+    &__icon {
+        padding: 0 0 0 10px;
+    }
+}
+
+.portfolio__inner:hover .portfolio__text {
+    transform: translate(0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+// .portfolio__inner:focus .portfolio__text {
+//     opacity: 0;
+//     display: none;
+//     visibility: hidden;
+//     transform: translate(0, 100%);
+//     transition: all 0.3s ease-in-out;
+// }
+
+// .backfon__checkbox:checked .portfolio__text {
+//     transform: translate(0, 100%);
+
+// }
+
+@media screen and (max-width:768px) {
+
+    .backfon {
+
+        &__modal {
+            width: 68%;
+            height: auto;
+        }
+    }
+
+    .portfolio {
+
+        &__title {
+            font-size: 2.8rem;
+        }
+    }
+}
+
